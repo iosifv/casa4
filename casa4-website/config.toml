@@ -1,0 +1,10 @@
+baseURL = 'https://casa4.co.uk/'
+languageCode = 'en-gb'
+defaultContentLanguage = "en-gb"
+title = 'Casa4'
+theme = "spectral"
+paginate = "7"
+
+[[languages.en.params.menu.main]]
+url = '/'
+title = "Home"

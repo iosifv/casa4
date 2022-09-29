@@ -1,0 +1,3 @@
+[submodule "casa4-website/themes/spectral"]
+	path = casa4-website/themes/spectral
+	url = https://github.com/sbruder/spectral
