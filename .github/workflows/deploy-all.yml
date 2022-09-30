@@ -36,10 +36,10 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Plan
-        id: plan
-        run: terraform plan -no-color
-        continue-on-error: true
+      # - name: Terraform Plan
+      #   id: plan
+      #   run: terraform plan -no-color
+      #   continue-on-error: true
       # - name: Terraform Outputs
       #   id: output
       #   run: terraform output
@@ -59,7 +59,8 @@ jobs:
           ls ${{ github.workspace }}/casa4-website/public
 
       - name: Copy generated files to S3 Bucket
-        run: aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+        # run: aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+        run: aws s3 cp casa4-website/public/ s3://casa4.co.uk/ --recursive
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
