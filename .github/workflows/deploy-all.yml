@@ -19,8 +19,8 @@ jobs:
           ls ${{ github.workspace }}
 
       - name: Terraform
-        run: apt install terraform
         run: |
+          apt install terraform
           terraform plan
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -37,4 +37,5 @@ jobs:
       - name: Copy generated files to S3 Bucket
         run: |
           aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
