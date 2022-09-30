@@ -18,10 +18,15 @@ jobs:
         run: |
           ls ${{ github.workspace }}
 
+      # - name: HashiCorp - Setup Terraform
+      #     uses: hashicorp/setup-terraform@v2.0.0
+
       # - name: Terraform
       #   run: |
       #     apt install terraform
       #     terraform plan
+
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -35,7 +40,7 @@ jobs:
           ls ${{ github.workspace }}/casa4-website/public
 
       - name: Copy generated files to S3 Bucket
-        run: |
-          aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+        # run: aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+        run: aws s3 cp casa4-website/public/ s3://casa4.co.uk/ --recursive
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
