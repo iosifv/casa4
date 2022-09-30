@@ -1,330 +1,749 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+	<meta name="generator" content="Hugo 0.104.2" />
+    <title>Casa4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="" />
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+:root {
+  --cursor-visibility: hidden; }
 
-<html lang="en">
-	<head>
-	  <title>Casa4</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="referrer" content="origin">
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: "Inconsolata", monospace;
+  font-size: 4vmin;
+  line-height: 4.1vmin;
+  font-weight: normal; }
 
-    <meta name="description" content="Another fine responsive
-site template freebie
-crafted by HTML5 UP.
-Ported to Hugo by Simon Bruder.">
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+#content {
+  min-width: 82vmin;
+  min-height: 82vmin; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px white; }
+
+.cursor, #cd:after, #whoami:after, #cat:after, #tree:after {
+  visibility: var(--cursor-visibility);
+  content: "|";
+  overflow: hidden;
+  color: white;
+  animation: blink 500ms linear infinite alternate; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 2.5vmin;
+    line-height: 2.6vmin; }
+  #content {
+    min-width: 60vmin; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-    <link rel="alternate" type="application/rss+xml" href="https://casa4.co.uk/index.xml" title="Casa4">
-    <meta name="generator" content="Hugo 0.104.2" />
 
     
-<link rel="stylesheet" href="/css/main.min.a740298f90936602a1aefb578a5d8b2bd7ffe10a25146bc72555880d3b5c4ab74dc3ff4853b14e2d0e7e9d2914081346c9ca5e0707e8d3fff436c3dd78c8db7b.css" integrity="sha512-p0Apj5CTZgKhrvtXil2LK9f/4QolFGvHJVWIDTtcSrdNw/9IU7FOLQ5&#43;nSkUCBNGycpeBwfo0//0NsPdeMjbew==">
-
-
-<noscript><link rel="stylesheet" href="/css/noscript.min.e6f1ba19697eecfddfbf83ff7181b98181998f163d7005f6ae923451556bf85bef357f43dffe1522b92c1efab7fb38441f479e39b7a03e4313a8ef12b0b01f65.css" integrity="sha512-5vG6GWl&#43;7P3fv4P/cYG5gYGZjxY9cAX2rpI0UVVr&#43;FvvNX9D3/4VIrksHvq3&#43;zhEH0eeObegPkMTqO8SsLAfZQ=="></noscript>
-
-
 
     
-    <link rel="alternate" hreflang="de" href="https://casa4.co.uk/de/">
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Casa4"/>
-<meta name="twitter:description" content="Another fine responsive&lt;br /&gt;site template freebie&lt;br /&gt;crafted by &lt;a href=&#34;http://html5up.net&#34;&gt;HTML5 UP&lt;/a&gt;.&lt;br /&gt;Ported to &lt;a href=&#34;//gohugo.io&#34;&gt;Hugo&lt;/a&gt; by Simon Bruder."/>
-
-    <meta property="og:title" content="Casa4" />
-<meta property="og:description" content="Another fine responsive&lt;br /&gt;site template freebie&lt;br /&gt;crafted by &lt;a href=&#34;http://html5up.net&#34;&gt;HTML5 UP&lt;/a&gt;.&lt;br /&gt;Ported to &lt;a href=&#34;//gohugo.io&#34;&gt;Hugo&lt;/a&gt; by Simon Bruder." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://casa4.co.uk/" />
-
 
     
-	</head>
-	<body class="landing is-preload">
 
-		
-			<div id="page-wrapper">
-
-				
-          <header id="header" class="alt">
-            <h1><a href="https://casa4.co.uk/">Casa4</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-                  <a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-				              
-				              <li><a href="/">Home</a></li>
-				              
-				              <li><a href="/posts/">Posts</a></li>
-				              
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
-
-
-<section id="banner">
-	<div class="inner">
-    <h2>Casa4 Ltd.</h2>
-    <p>Another fine responsive<br />site template freebie<br />crafted by <a href="http://html5up.net">HTML5 UP</a>.<br />Ported to <a href="//gohugo.io">Hugo</a> by Simon Bruder.</p>
     
-		<ul class="actions special">
-      <li><a href="#" class="button primary">Activate</a></li>
-		</ul>
+
     
-	</div>
-  <a href="#one" class="more scrolly">Learn More</a>
-</section>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
 
-
-
-
-	<section id="one" class="wrapper style1 special">
-		<div class="inner">
-			<header class="major">
-        <h2>Arcu aliquet vel lobortis ata nisl<br />eget augue amet aliquet nisl cep donec</h2>
+body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
 
         
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br>
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-  
+.navFull {
+    background-color: #353535;
+    font-family: "Courier New";
+    font-size: 17px;
+    display: inline;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
 
+.navCredits {
+    float: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
 
-			</header>
-			<ul class="icons major">
+#content::after {
+    content: "\a\a";
+    white-space: pre;
+}
         
-        <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
         
-        <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+</style>
+
+
+
+</head><body><div id="content">
+    
+    
+
+    
+    
+
+    
+    
         
-        <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
         
-			</ul>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-<section id="two" class="wrapper alt style2">
-  
-	<section class="spotlight">
-    <div class="image"><img src="/img/pic01.jpg" alt="" /></div><div class="content">
-      <h2>Magna primis lobortis<br />sed ullamcorper</h2>
-      
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-  
-
-
-		</div>
-	</section>
-  
-	<section class="spotlight">
-    <div class="image"><img src="/img/pic02.jpg" alt="" /></div><div class="content">
-      <h2>Tortor dolore feugiat<br />elementum magna</h2>
-      
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-  
-
-
-		</div>
-	</section>
-  
-	<section class="spotlight">
-    <div class="image"><img src="/img/pic03.jpg" alt="" /></div><div class="content">
-      <h2>Magna primis lobortis<br />sed ullamcorper</h2>
-      
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-  
-
-
-		</div>
-	</section>
-  
-</section>
-
-
-
-
-
-
-
-
-<section id="three" class="wrapper style3 special">
-	<div class="inner">
-		<header class="major">
-      <h2>Accumsan mus tortor nunc aliquet</h2>
-      
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br>
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-  
-
-
-		</header>
-		<ul class="features">
-      
-      <li class="icon fa-paper-plane-o">
-        <h3>Arcu accumsan</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-      <li class="icon fa-laptop">
-        <h3>Ac Augue Eget</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-      <li class="icon fa-code">
-        <h3>Foo bar</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-      <li class="icon fa-headphones">
-        <h3>Baz kram</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-      <li class="icon fa-heart-o">
-        <h3>Some latin text</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-      <li class="icon fa-flag-o">
-        <h3>Nothing important</h3>
-        <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-			</li>
-      
-		</ul>
-	</div>
-</section>
-
-
-
-
-
-
-
-
-<section id="cta" class="wrapper style4">
-	<div class="inner">
-		<header>
-      <h2>Arcue ut vel commodo</h2>
-      
-  
-  
-    <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-  
-
-
-		</header>
-		<ul class="actions stacked">
-      
-      <li><a href="#" class="button fit primary">Activate</a></li>
-      
-      <li><a href="#" class="button fit ">Learn More</a></li>
-      
-		</ul>
-	</div>
-</section>
-
-
-
-
-
-
-
-
-<section id="contact" class="wrapper style5">
-  <div class="inner">
-    <header class="major">
-      <h2>Contact</h2>
-      
-  
-  
-    <p>Leave us a message.</p>
-  
-
-
-    </header>
-    <form method="post" action="https://formspree.io/">
-      <div class="row gtr-uniform">
-        <input type="hidden" name="_subject" value="" />
+            
+            
         
-        <div class="col-6 col-12-xsmall">
-          <input type="text" name="name" id="name" value="" placeholder="Name" required />
+    
+    
+
+    
+    
+    
+    
+    
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+    
+
+    
+
+    
+
+    
+    
+    
+
+    <span id="ps1_01"></span> <span id="cd"></span> <br>
+<span id="ps1_02"></span> <span id="cat"></span> <br>
+<span id="std_out_01"></span> <br>
+<span id="ps1_03"></span> <span id="tree"></span> <br>
+<span id="std_out_02"></span> <br>
+<span id="ps1_04"></span>
+
+<script type="text/javascript">
+    async function typewriter(text, elementId, waitAfter) {
+        var n = 0,
+            isTag = false
+        addText = "";
+        const el = document.getElementById(elementId);
+
+        const wait = () => new Promise(r => setTimeout(r, waitAfter));
+        const nowait = () => new Promise(r => r());
+
+        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
+
+        const cursor = document.createElement('span');
+        cursor.id = "blink";
+
+        el.style.setProperty("--cursor-visibility", "visible");
+        while (n < text.length) {
+            if (text.charAt(n + 1) === "<") isTag = true;
+            if (text.charAt(n + 1) === ">") isTag = false;
+
+            if (isTag) {
+                n++;
+                continue;
+            }
+
+            requestAnimationFrame(render);
+
+            if (waitAfter === 0) {
+                await nowait();
+            } else {
+                await wait();
+            }
+
+            n++;
+        }
+        el.style.setProperty("--cursor-visibility", "collapse");
+    }
+
+    function parseDelay(d) {
+        const parsed = parseInt(d, 10);
+        if (isNaN(parsed)) return 0;
+        return parsed;
+    }
+
+    const ps1Delay = parseDelay("0"),
+        stdoutDelay = parseDelay("0"),
+        commandDelay = parseDelay("50");
+    const typeeffetct = async () => {
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eiosif@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd casa4_files\u003c\/span\u003e", "cd", commandDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eiosif@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/casa4_files\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.txt\u003c\/span\u003e", "cat", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003eHello from Casa4 Ltd!\u003c\/p\u003e\n\u003cp\u003eNice to meet you 🙂\u003c\/p\u003e\n\u003cp\u003eTest from md file\u003c\/p\u003e\n\u003c\/span\u003e", "std_out_01", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eiosif@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/casa4_files\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/Links\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/Links\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/iosifv.com\/\u0027\u003ePersonal website\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/iosifv.com\/cv\/\u0027\u003eOnline CV\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/casa4.co.uk\/projects\/\u0027\u003eProjects\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/casa4.co.uk\/posts\/my-first-post\/\u0027\u003ePost\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eiosif@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/casa4_files\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
+        return;
+    }
+
+    typeeffetct()
+</script>
+
+
         </div>
-        <div class="col-6 col-12-xsmall">
-          <input type="email" name="_replyto" id="_replyto" value="" placeholder="Email" required />
-        </div>
-        <div class="col-12">
-          <textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
-        </div>
-        <div class="col-12">
-          <ul class="actions">
-            <li><input type="submit" value="send" class="primary" /></li>
-            <li><input type="reset" value="reset" /></li>
-          </ul>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
+        
+        <span class="navFull">
+        
+    
+    
 
+    
+        
 
+<span>
+    <a href="/">Home</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="./..">/</a>
+</span>
 
+    
 
-				
-					<footer id="footer">
-						<ul class="icons">
-              
-              
-              
-              
-              
-              <li><a href="mailto:nospam@example.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-              
-              
-              <li><a href="tel:&#43;49%20%280%29%20030%20000%20000" class="icon fa-phone"><span class="label">Phone</span></a></li>
-              
+        
+        <span class="navCredits">
+            Hugo theme created by
+            <a href="https://github.com/Yukuro/hugo-theme-shell" target="_blank" rel="noopener">Yukuro</a>
+        </span>
+</span>
 
-						</ul>
-						<ul class="copyright">
-              <li>&copy; 2022 John Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-      
-
-
-
-
-
-
-
-
-
-<script src="/js/bundle.min.e782e74b6a26b3617d7b8d54226975384ec8c8ea308372a74df0ab1963ec7e41b87330abd1910eec69ef09bdf08a12bf1bcb5321cc4077c8d0a6c00825fc56b5.js" integrity="sha512-54LnS2oms2F9e41UIml1OE7IyOowg3KnTfCrGWPsfkG4czCr0ZEO7GnvCb3wihK/G8tTIcxAd8jQpsAIJfxWtQ=="></script>
-
-
-	</body>
+        
+         
+    </body>
 </html>
-

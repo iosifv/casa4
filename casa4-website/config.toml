@@ -22,7 +22,7 @@ ignoreErrors = ["error-remote-getjson"]
 # Additions stop here
     
   # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
-  description = "Jane Doe's Portfolio!"
+  description = "Casa4 Ltd Presentation!"
   [Params.Terminal]
   # Note: color scheme
   # Note: You can choose between
@@ -43,7 +43,7 @@ ignoreErrors = ["error-remote-getjson"]
   # Note: result of the tree command
   userName = "iosif"
   pcName = "laptop"
-  workDir = "mydir"
+  workDir = "casa4_files"
   profile = "profile.txt"
 
   # Note: speed at which text is displayed on the terminal
@@ -67,26 +67,19 @@ ignoreErrors = ["error-remote-getjson"]
 
   # activityDelay = 5 : deprecated
 
-  description = """
-  Hello from Casa4 Ltd!
-  Nice to meet you 🙂
-  
-  """
-
   # Note: If you want to use a Markdown file, you can use the following
-  # description = "/description.md"
+  description = "/description.md"
   # Note: and put the description.md in /content/description.md
 
   [Params.Tree]
   use = true
-  folderName = "my_activity"
+  folderName = "Links"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
-    ["C/C++", "https://www.example.com/"],
-    ["Python", "https://www.example.com/"],
-    ["Go", "https://golang.org/"],
-    ["Hugo", "/post/some-activity.md"],
-    ["Docker", "/post/some-activity.md"],
+    ["Personal website", "https://iosifv.com/"],
+    ["Online CV", "https://iosifv.com/cv/"],
+    ["Projects", "/projects.md"],
+    ["Post", "/posts/my-first-post.md"],
   ]
 
 [module]
