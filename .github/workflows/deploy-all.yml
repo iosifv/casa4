@@ -66,5 +66,9 @@ jobs:
       - name: Copy generated files to S3 Bucket
         # run: aws s3 cp casa4-website/public/ s3://$(terraform output -raw website_bucket_name)/ --recursive
         run: aws s3 cp casa4-website/public/ s3://casa4.co.uk/ --recursive
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_EC2_METADATA_DISABLED: true
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
