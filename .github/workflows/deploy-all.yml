@@ -51,6 +51,9 @@ jobs:
         with:
           hugo-version: 'latest'
           # extended: true
+      - name: Install Hugo Theme
+        working-directory: ./casa4-website
+        run: git submodule add https://github.com/Yukuro/hugo-theme-shell.git themes/shell
       - name: Build Hugo
         working-directory: ./casa4-website
         run: hugo
