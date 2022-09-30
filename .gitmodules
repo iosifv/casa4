@@ -1,3 +1,3 @@
-[submodule "casa4-website/themes/spectral"]
-	path = casa4-website/themes/spectral
-	url = https://github.com/sbruder/spectral
+[submodule "casa4-website/themes/shell"]
+	path = casa4-website/themes/shell
+	url = https://github.com/Yukuro/hugo-theme-shell.git
