@@ -28,7 +28,7 @@ jobs:
           hugo-version: 'latest'
           # extended: true
       - name: Build Hugo
-        run: cd casa4-website
+        working-directory: ./casa4-website
         run: hugo -D
       - name: List generated website files
         run: |
