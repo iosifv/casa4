@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Casa4</title>
+    <link>https://casa4.co.uk/</link>
+    <description>Recent content on Casa4</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://casa4.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://casa4.co.uk/description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://casa4.co.uk/description/</guid>
+      <description>Hello from Casa4 Ltd!
+Nice to meet you 🙂
+This is an ever so slightly overengineered website built mostly for training purposes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://casa4.co.uk/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://casa4.co.uk/projects/</guid>
+      <description>Prrrrojectz</description>
+    </item>
+    
+  </channel>
+</rss>

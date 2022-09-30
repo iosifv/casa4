@@ -79,7 +79,7 @@ ignoreErrors = ["error-remote-getjson"]
     ["Personal website", "https://iosifv.com/"],
     ["Online CV", "https://iosifv.com/cv/"],
     ["Projects", "/projects.md"],
-    ["Post", "/posts/my-first-post.md"],
+    ["Post", "posts/my-first-post.md"],
   ]
 
 [module]
