@@ -29,5 +29,8 @@ override.tf.json
 # example: *tfplan*
 
 
+# OS Generated
+**/.DS_Store
+
 # Generated Hugo website
-./casa4-website/public/
+/casa4-website/public/
