@@ -36,10 +36,10 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      # - name: Terraform Plan
-      #   id: plan
-      #   run: terraform plan -no-color
-      #   continue-on-error: true
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan -no-color
+        continue-on-error: true
       # - name: Terraform Outputs
       #   id: output
       #   run: terraform output
