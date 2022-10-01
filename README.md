@@ -5,10 +5,13 @@ Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 ## Concept
 - [x] Build a simple website using HUGO
 - [x] Built the infrastructure with Terraform
-- [x] Use Aws for hosting
+- [x] Use AWS S3 for static file hosting
 - [x] Use Cloudflare's DNS
 - [ ] Create a full CI/CD Pipeline using Github Actions
 - [ ] Create a production and a staging environment
+
+## Todo
+- [ ] - move bucket to eu-west-2
 
 ### Resources used to learn 
 - [Terraform Youtube Video from DevOps Directive](https://www.youtube.com/watch?v=7xngnjfIlK4)
