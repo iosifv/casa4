@@ -22,7 +22,6 @@ jobs:
 
   terraform:
     runs-on: ubuntu-latest
-    needs: explore
     steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v3
@@ -45,9 +44,9 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    needs: [explore, terraform]
+    needs: [terraform]
     steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v3
