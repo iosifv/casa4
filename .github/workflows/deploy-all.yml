@@ -90,7 +90,7 @@ jobs:
       #   working-directory: ./casa4-website
       #   run: git submodule add https://github.com/Yukuro/hugo-theme-shell.git themes/shell
       - name: Build Hugo
-        working-directory: ./casa4-website
+        working-directory: /casa4-website
         run: hugo
       - name: List generated website files
         run: |
