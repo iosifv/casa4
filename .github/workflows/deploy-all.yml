@@ -4,7 +4,7 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v3
         with:
@@ -22,7 +22,7 @@ jobs:
 
   Terraform:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: HashiCorp - Setup Terraform
           uses: hashicorp/setup-terraform@v2.0.0
           with:
