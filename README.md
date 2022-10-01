@@ -1,18 +1,29 @@
 # casa4
 
-Configuration for casa4 website should contain
-- terraform files
-- some kind of static website generator
-- github actions
+Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 
-Followed these:
-- https://learn.hashicorp.com/tutorials/terraform/cloudflare-static-website?in=terraform/aws#create-a-scoped-cloudflare-api-token
-- https://github.com/hashicorp/learn-terraform-cloudflare-static-website
+## Concept
+- [x] Build a simple website using HUGO
+- [x] Built the infrastructure with Terraform
+- [x] Use Aws for hosting
+- [x] Use Cloudflare's DNS
+- [ ] Create a full CI/CD Pipeline using Github Actions
+- [ ] Create a production and a staging environment
 
-Account links:
-- https://app.terraform.io/app/iosifv/workspaces/casa4
-- https://dash.cloudflare.com/17c4229eaf5c7c27e34b7527cbb683ec/casa4.co.uk/dns
-- https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fs3.console.aws.amazon.com%2Fs3%2Fbuckets%2Fcasa4.co.uk%3Fregion%3Dus-east-1%26state%3DhashArgs%2523%26tab%3Dobjects%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fs3&forceMobileApp=0&code_challenge=ipjw9m4PWHPApVNMRL-pu6biENaqjAYajUzqf2y55uU&code_challenge_method=SHA-256
+### Resources used to learn 
+- [Terraform Youtube Video from DevOps Directive](https://www.youtube.com/watch?v=7xngnjfIlK4)
+- [Terraform Cloudflare Example](https://learn.hashicorp.com/tutorials/terraform/cloudflare-static-website?in=terraform/aws#create-a-scoped-cloudflare-api-token)
+- [Terraform Cloudflare Example Github Repo](https://github.com/hashicorp/learn-terraform-cloudflare-static-website)
+- [Github Actions Documentation - Quickstart](https://docs.github.com/en/actions/quickstart)
+- [This video](https://www.youtube.com/watch?v=Sxxw3qtb3_g) that convinced me to use HUGO for static site generation
 
-Quick commands:
-- aws s3 cp website/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+### Development friendly links for myself
+- [Terraform project](https://app.terraform.io/app/iosifv/workspaces/casa4)
+- [Cloudflare dashboard](https://dash.cloudflare.com/17c4229eaf5c7c27e34b7527cbb683ec/casa4.co.uk/dns)
+- [AWS S3 Bucket](https://s3.console.aws.amazon.com/s3/buckets/casa4.co.uk?region=us-east-1&tab=objects#)
+
+### Quick commands:
+- ```aws s3 cp website/ s3://$(terraform output -raw website_bucket_name)/ --recursive```
+
+#### Fun fact!
+Mostly built this while in vacation in Cyprus 🇨🇾 at [BEON1X](https://beon1x.com/) music festival.
