@@ -10,6 +10,7 @@ Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 - [ ] Create a full CI/CD Pipeline using Github Actions
 - [ ] Easily update website content with online editors like [Prose](https://prose.io/)
 - [ ] Create a production and a staging environment
+- [ ] Add actual content on the site
 
 ## Todo
 - [ ] - move bucket to eu-west-2
@@ -28,5 +29,7 @@ Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 - [Cloudflare dashboard](https://dash.cloudflare.com/17c4229eaf5c7c27e34b7527cbb683ec/casa4.co.uk/dns)
 - [AWS S3 Bucket](https://s3.console.aws.amazon.com/s3/buckets/casa4.co.uk?region=us-east-1&tab=objects#)
 
-#### Fun fact!
+.
+
+#### _Fun fact!_
 Mostly built this while in vacation in Cyprus 🇨🇾 at [BEON1X](https://beon1x.com/) music festival.
