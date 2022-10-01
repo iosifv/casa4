@@ -28,8 +28,5 @@ Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 - [Cloudflare dashboard](https://dash.cloudflare.com/17c4229eaf5c7c27e34b7527cbb683ec/casa4.co.uk/dns)
 - [AWS S3 Bucket](https://s3.console.aws.amazon.com/s3/buckets/casa4.co.uk?region=us-east-1&tab=objects#)
 
-### Quick commands:
-- ```aws s3 cp website/ s3://$(terraform output -raw website_bucket_name)/ --recursive```
-
 #### Fun fact!
 Mostly built this while in vacation in Cyprus 🇨🇾 at [BEON1X](https://beon1x.com/) music festival.
