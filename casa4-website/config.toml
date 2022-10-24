@@ -77,9 +77,10 @@ ignoreErrors = ["error-remote-getjson"]
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
     ["Personal website", "https://iosifv.com/"],
-    ["Online CV", "https://iosifv.com/cv/"],
-    ["Projects", "/projects.md"],
-    ["Post", "posts/my-first-post.md"],
+    ["Online CV", "https://iosifv.github.io/cv"],
+    ["Online CV - PDF", "https://iosifv.github.io/cv/resume.pdf"],
+    # ["Projects", "/projects.md"],
+    # ["Post", "posts/my-first-post.md"],
   ]
 
 [module]
