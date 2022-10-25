@@ -83,8 +83,9 @@ ignoreErrors = ["error-remote-getjson"]
 5│ specialised in web applications
 6│ using Node.js, Laravel or Solidity.
 7│ 
-8│ Based in London 🇬🇧, available at <a href="mailto:iosif@casa4.co.uk">iosif[at]casa4.co.uk</a>
-9│ 
+8│ Based in London 🇬🇧, available at 
+9│ <a href="mailto:iosif@casa4.co.uk">iosif[at]casa4.co.uk</a>
+0|
 ──────────────────────────────────────────────────────────────────
   """
   description2 = """
