@@ -104,8 +104,8 @@ built mostly for training purposes. <br>
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
     ["Personal website", "https://iosifv.com/"],
-    ["View my CV", "http://cv.iosifv.com/"],
-    ["Download my CV as PDF", "http://cv.iosifv.com/resume.pdf"],
+    ["View my CV", "https://cv.iosifv.com/"],
+    ["Download my CV as PDF", "https://cv.iosifv.com/resume.pdf"],
     # ["iosif@casa4.co.uk", "mailto:iosif@casa4.co.uk"],
     # ["Projects", "/projects.md"],
     # ["Post", "posts/my-first-post.md"],
