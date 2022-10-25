@@ -2,15 +2,23 @@
 
 Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 
+## Installation and running
+
+```bash
+cd casa4-website && hugo server -w -D
+```
+
 ## Concept
 - [x] Build a simple website using HUGO
 - [x] Built the infrastructure with Terraform
 - [x] Use AWS S3 for static file hosting
 - [x] Use Cloudflare's DNS
 - [ ] Create a full CI/CD Pipeline using Github Actions
-- [ ] Easily update website content with online editors like [Prose](https://prose.io/)
+- [x] Easily update website content with online editors like [Prose](https://prose.io/)
 - [ ] Create a production and a staging environment
 - [ ] Add actual content on the site
+  - [ ] second description
+  - [ ] second link section for contact: phone/whatsapp/email
 
 ## Todo
 - [ ] - move bucket to eu-west-2
@@ -22,6 +30,8 @@ Simple repository for online website [casa4.co.uk](https://casa4.co.uk)
 - [Terraform Cloudflare Example Github Repo](https://github.com/hashicorp/learn-terraform-cloudflare-static-website)
 - [Github Actions Documentation - Quickstart](https://docs.github.com/en/actions/quickstart)
 - [This video](https://www.youtube.com/watch?v=Sxxw3qtb3_g) that convinced me to use HUGO for static site generation
+- [Shell, used Hugo Theme - Official Link](https://themes.gohugo.io/themes/hugo-theme-shell/)
+- [Shell, used Hugo Theme - Github Link](https://github.com/Yukuro/hugo-theme-shell/blob/master/docs/customize_terminal/customize_terminal.md)
 
 ### Development friendly links for myself
 - [Prose editor](https://prose.io/#iosifv/casa4/tree/main/casa4-website/content)
