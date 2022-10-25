@@ -84,7 +84,7 @@ ignoreErrors = ["error-remote-getjson"]
 6│ using Node.js, Laravel or Solidity.
 7│ 
 8│ Based in London 🇬🇧, available at 
-9│ <a href="mailto:iosif@casa4.co.uk">iosif[at]casa4.co.uk</a>
+9│  => <a href="mailto:iosif@casa4.co.uk">iosif[at]casa4.co.uk</a>
 0│
 ──────────────────────────────────────────────────────────────────
   """
@@ -92,8 +92,9 @@ ignoreErrors = ["error-remote-getjson"]
   <br>
 This is an ever so slightly overengineered website, <br>
 built mostly for training purposes. <br>
-<sup><i>["Hugo", "Terraform", "Cloudfront", "AWS", "Github Actions"]</i></sup> <br>
-You can steal the source code from my <a href="https://github.com/iosifv/casa4">Github</a> <br>
+<small><i>["Hugo", "Terraform", "Cloudfront", "AWS", "Github Actions"]</i></small> <br>
+<br>
+<small>You can steal the source code from my</small> <a href="https://github.com/iosifv/casa4">Github</a> <br>
     """
 
 
