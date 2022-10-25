@@ -16,6 +16,7 @@ cd casa4-website && hugo server -w -D
 - [ ] Create a full CI/CD Pipeline using Github Actions
 - [x] Easily update website content with online editors like [Prose](https://prose.io/)
 - [ ] Create a production and a staging environment
+- [ ] Add tracking with Google
 - [ ] Add actual content on the site
   - [ ] second description
   - [ ] second link section for contact: phone/whatsapp/email
