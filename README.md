@@ -13,12 +13,12 @@ cd casa4-website && hugo server -w -D
 - [x] Built the infrastructure with Terraform
 - [x] Use AWS S3 for static file hosting
 - [x] Use Cloudflare's DNS
-- [ ] Create a full CI/CD Pipeline using Github Actions
+- [x] Create a full CI/CD Pipeline using Github Actions
 - [x] Easily update website content with online editors like [Prose](https://prose.io/)
 - [ ] Create a production and a staging environment
 - [ ] Add tracking with Google
 - [ ] Add favico
-- [x] Add actual content on the site
+- [x] Add actual content on the site 😜
   - [ ] second description
   - [ ] second link section for contact: phone/whatsapp/email
 
