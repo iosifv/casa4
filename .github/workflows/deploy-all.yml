@@ -55,7 +55,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.121.1" # Using a specific version for better reproducibility
+          hugo-version: "0.95.0" # Using an older version for better theme compatibility
           extended: true # Required for SCSS/SASS processing
       # - name: Install Hugo Theme
       #   working-directory: ./casa4-website
