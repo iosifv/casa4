@@ -1,0 +1,26 @@
+{
+  "themes": [
+    {
+      "name": "Molokai",
+      "background": "#1B1D1E",
+      "foreground": "#BBBBBB",
+      "black": "#1B1D1E",
+      "red": "#7325FA",
+      "green": "#8E2DA2",
+      "yellow": "#FF0087",
+      "blue": "#F37329",
+      "purple": "#7A7A7A",
+      "cyan": "#FF6AC1",
+      "white": "#F8F8F2",
+      "brightBlack": "#5A5A5A",
+      "brightRed": "#9D68D2",
+      "brightGreen": "#A57A42",
+      "brightYellow": "#FF87D7",
+      "brightBlue": "#FFA56B",
+      "brightPurple": "#BEBEBE",
+      "brightCyan": "#C5A3FF",
+      "brightWhite": "#FFFFFF",
+      "cursorColor": "#BBBBBB"
+    }
+  ]
+}

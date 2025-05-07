@@ -1,0 +1,23 @@
+{{ $terminal_style := "" }}
+{{ with .Site.Params.Terminal.scheme }}
+    {{ if eq . "shell-powershell" }}
+        {{- $terminal_style = resources.Get "sass/shell-powershell.scss" | resources.ToCSS | minify -}}
+    {{ else if eq . "shell-ubuntu" }}
+        {{- $terminal_style = resources.Get "sass/shell-ubuntu.scss" | resources.ToCSS | minify -}}
+    {{ else if eq . "shell-retro" }}
+        {{- $terminal_style = resources.Get "sass/shell-retro.scss" | resources.ToCSS | minify -}}
+    {{ else }}
+        {{/*  default color  */}}
+        {{- $terminal_style = resources.Get "sass/shell-ubuntu.scss" | resources.ToCSS | minify -}}
+    {{ end }}
+    {{- $terminal_style = $terminal_style.Content -}}
+{{ end }}
+
+{{/*  This next section uses local data instead of fetching from GitHub  */}}
+{{ $molokai := dict "name" "Molokai" "background" "#1B1D1E" "foreground" "#BBBBBB" "black" "#1B1D1E" "red" "#7325FA" "green" "#8E2DA2" "yellow" "#FF0087" "blue" "#F37329" "purple" "#7A7A7A" "cyan" "#FF6AC1" "white" "#F8F8F2" "brightBlack" "#5A5A5A" "brightRed" "#9D68D2" "brightGreen" "#A57A42" "brightYellow" "#FF87D7" "brightBlue" "#FFA56B" "brightPurple" "#BEBEBE" "brightCyan" "#C5A3FF" "brightWhite" "#FFFFFF" "cursorColor" "#BBBBBB" }}
+
+{{ if eq $.Site.Params.Terminal.scheme "Molokai" }}
+    {{ $terminal_style = printf "body{background:%s}body #terminal{color:%s}body #user{color:%s}body #dir{color:%s}body .Typewriter__cursor{color:%s}a{color:%s}" $molokai.background $molokai.cursorColor $molokai.green $molokai.blue $molokai.cursorColor $molokai.cursorColor | safeCSS }}
+{{ end }}
+
+{{ $terminal_style | safeCSS }}

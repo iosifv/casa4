@@ -61,6 +61,14 @@ jobs:
       #   working-directory: ./casa4-website
       #   run: git submodule add https://github.com/Yukuro/hugo-theme-shell.git themes/shell
 
+      - name: List theme directory and data directory
+        run: |
+          echo "Theme directory contents:"
+          ls -la ${{ github.workspace }}/casa4-website/themes/shell/layouts/partials/
+          echo "\nData directory contents:"
+          ls -la ${{ github.workspace }}/casa4-website/data/
+          cat ${{ github.workspace }}/casa4-website/data/themes.json
+
       - name: Build Hugo
         working-directory: ${{ github.workspace }}/casa4-website
         run: hugo
