@@ -56,7 +56,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.121.1" # Using a specific version for better reproducibility
-          # extended: true
+          extended: true # Required for SCSS/SASS processing
       # - name: Install Hugo Theme
       #   working-directory: ./casa4-website
       #   run: git submodule add https://github.com/Yukuro/hugo-theme-shell.git themes/shell
